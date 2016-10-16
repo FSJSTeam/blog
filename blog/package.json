@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "全栈俱乐部博客园",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FSJSTeam/blog.git"
+  },
+  "author": "麦晓杰",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FSJSTeam/blog/issues"
+  },
+  "homepage": "https://github.com/FSJSTeam/blog#readme"
+}

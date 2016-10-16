@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header{
+	height: 65px;
+	width:100%;
+	background-color: #393D49;
+	position: fixed;
+
+}
+.main{
+	height: 65px;
+	width:100%;
+	position: relative;
+
+}
+
+/*fly样式*/
+.logo{
+	background: url(../images/logo.png);
+	margin-left: 132px;
+	top: 13px;
+	display: block;
+	width: 135px;
+	height: 37px;
+	position: absolute;
+
+}
+
+/*问答和框架样式*/
+.icon{
+	display: block;
+	height: 35px;
+	width: 35px;
+	
+}
+
+.icon-wenhao{
+	background:url(../images/icon-wenhao.svg);
+	background-size: 35px 35px;
+	vertical-align:middle;
+}
+.icon-ui{
+	background:url(../images/icon-ui.svg);
+	background-size: 35px 35px;
+	vertical-align:middle;
+}
+
+.nav{
+	position: absolute;
+	width: 220px;
+	height: 37px;
+	left:375px;
+	top: 13px;
+}
+
+.nav a {
+	width: 110px;
+	height: 37px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #999999;
+}
+.nav a i{
+	display:inline-block;
+}
+.nav a span{
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+/*登入注册样式*/
+.nav-user{
+	height: 37px;
+	width: 280px;
+	position: absolute;
+	top: 13px;
+	left: 940px;
+}
+
+
+
+.icon-touxiang{
+	background:url(../images/icon-touxiang.svg);
+	background-size: 35px 35px;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	vertical-align:middle;
+
+	
+}
+.nav-user p{
+	display: inline;
+}
+.nav-user span a {
+	text-decoration: none;
+	color: #999999;
+	font-size: 13px;
+	margin-left: 20px;
+
+}
+.nav-user span  :hover{
+	color: white;
+}
+.nav-user span a :first{
+	position: absolute;
+	left: 50px;
+}
+.nav-user span a :nth-child(2){
+	position: absolute;
+	left: 100px;
+}
+.icon-qq{
+	background:url(../images/icon-qq.svg);
+	left: 155px;
+
+	
+}
+.icon-wb{
+	background:url(../images/icon-wb.svg);
+	left:215px;
+	
+}
+.navuser-icon{
+	background-size: 35px 35px;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	margin-left: 20px;
+	position: absolute;
+	
+
+
+}
+
+

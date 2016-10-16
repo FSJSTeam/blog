@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<link rel="stylesheet" type="text/css" href="./css/post.css">
+	<title>发布</title>
+</head>
+<body>
+	<div class="header">
+		<a href="#" class="logo"></a>
+		<div class="nav">
+			<a href="#"><i class="icon icon-wenhao"></i><span>问答</span></a>
+			<a href="#"><i class="icon icon-ui"></i><span>框架</span></a>
+		</div>
+		<div class="nav-user">
+			<a href="#" class="icon-touxiang"></a>
+			<span><a href="#">登入</a><a href="#">注册</a></span>
+			<p>
+				<a href="#" class="navuser-icon icon-qq"></a>
+				<a href="#" class="navuser-icon icon-wb"></a>
+			</p>
+		</div>
+	</div>
+	<div class="main layui-clear">
+		<h2 class="page-title">发布博客</h2>
+		<div class="layui-form layui-form-pane">
+			<div class="layui-form-item">
+				<label for="title" class="layui-form-label">标题</label>
+				<div class="layui-input-block">
+					<input id="title" class="layui-input"></input>
+				</div>
+			</div>
+			<div class="layui-form-item layui-form-text">		
+				<textarea id="content" style="display:none"></textarea>
+				<label class="layui-form-label">内容</label>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="type" class="layui-form-label">类别</label>
+					<div class="layui-input-block">
+						<select name="" id="type">
+							<option value="">请选择类别</option>
+							<option value="1">Java</option>
+							<option value="2">PHP</option>
+							<option value="3">Node.js</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label for="tag" class="layui-form-label">标签</label>
+					<div class="layui-input-block">
+						<input id="tag" class="layui-input"></input>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<div class="layui-form-mid layui-word-aux">多个标签请用逗号隔开</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<button id="post" class="layui-btn">立即发布</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>
+			<a href="">全栈俱乐部</a>
+			 2016 © 版权所有
+		</p>
+		<p>
+			<a href="">商务合作</a>
+			<a href="">微信公众号</a>
+			<a href="">微博</a>
+		</p>
+		<p>
+			---by
+			<a href="">晓杰</a>
+			<a href="">楷子</a>
+			<a href="">小刀</a>
+			<a href="">小一</a>
+			<a href="">小丰</a>
+		</p>
+	</div>
+
+</body>
+<script type="text/javascript" src="./js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="./layui/layui.js"></script>
+<script type="text/javascript" src="./js/post.js"></script>
+</html>
+
+<!-- 发布博客，最好用一个编辑器（ueeditor或者其他）-->
