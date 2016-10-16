@@ -73,13 +73,13 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     margin-left: 10px;
     font-size: 13px;
 }
-/*登入注册样式*/
+/*账户设置退了*/
 .nav-user{
     height: 37px;
     width: 350px;
     position:absolute;
     top: 13px;
-    left: 900px;
+    left: 940px;
 
 }
 .icon-yhtouxiang{
