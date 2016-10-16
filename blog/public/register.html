@@ -3,10 +3,102 @@
 <head>
 	<meta charset="UTF-8">
 	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css">
 </head>
 <body>
-	
+	<div class="header">
+		<a href="#" class="logo"></a>
+		<div class="nav">
+			<a href="#"><i class="icon icon-wenhao"></i><span>问答</span></a>
+			<a href="#"><i class="icon icon-ui"></i><span>框架</span></a>
+		</div>
+		<div class="nav-user">
+			<a href="#" class="icon-touxiang"></a>
+			<span><a href="#">登入</a><a href="#">注册</a></span>
+			<p>
+				<a href="#" class="navuser-icon icon-qq"></a>
+				<a href="#" class="navuser-icon icon-wb"></a>
+			</p>
+		</div>
+	</div>
+	<div class="main layui-clear">
+		<h2 class="page-title">注册</h2>
+		<div class="layui-form layui-form-pane">
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="tel" class="layui-form-label">手机</label>
+					<div class="layui-input-block">
+						<input id="tel" class="layui-input"></input>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<div class="layui-form-mid layui-word-aux">将成为你唯一的登录名</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="tel" class="layui-form-label">手机验证码</label>
+					<div class="layui-input-block">
+						<input id="code" class="layui-input"></input>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<button class="layui-btn layui-btn-danger" id="smsCode">发送</button>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="pwd" class="layui-form-label">昵称</label>
+					<div class="layui-input-block">
+						<input id="nickname" class="layui-input"></input>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="pwd" class="layui-form-label">密码</label>
+					<div class="layui-input-block">
+						<input id="pwd" type="password" class="layui-input"></input>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<div class="layui-form-mid layui-word-aux">6-16个字符</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label for="pwd" class="layui-form-label">确认密码</label>
+					<div class="layui-input-block">
+						<input id="repwd" type="password" class="layui-input"></input>
+					</div>
+				</div>
+			</div>			
+			<div class="layui-form-item">
+				<button id="post" class="layui-btn">立即注册</button>			
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>
+			<a href="">全栈俱乐部</a>
+			 2016 © 版权所有
+		</p>
+		<p>
+			<a href="">商务合作</a>
+			<a href="">微信公众号</a>
+			<a href="">微博</a>
+		</p>
+		<p>
+			---by
+			<a href="">晓杰</a>
+			<a href="">楷子</a>
+			<a href="">小刀</a>
+			<a href="">小一</a>
+			<a href="">小丰</a>
+		</p>
+	</div>
 </body>
 </html>
 
-<!-- 注册所有流程-->
+<!-- 登录所有流程-->
