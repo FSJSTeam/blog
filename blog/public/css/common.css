@@ -129,6 +129,7 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     margin-left: 20px;
     position: absolute;
 }
+/*导航字体变色*/
 @keyframes myfirst
 {
 from {color:#999999;}
