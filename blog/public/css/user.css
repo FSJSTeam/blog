@@ -66,6 +66,10 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     text-decoration: none;
     color: #999999;
 }
+
+.nav a:hover{
+    animation:myfirst 2s;
+}
 .nav a i{
     display:inline-block;
 }
@@ -96,9 +100,10 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     display: block;
     height: 35px;
     width: 35px;    
-
 }
-
+.nav-user-shezhi a:hover{
+    animation:myfirst 2s;
+}
 .incon-shezhi{
     background:url(../images/icon-shezhi.svg);
     background-size: 35px 35px;
@@ -139,6 +144,12 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
 .nav-user-shezhi a span{
     margin-left: 10px;
     font-size: 13px;
+}
+/*css3的字体变化*/
+@keyframes myfirst
+{
+from {color:#999999;}
+to {color:#ffffff;}
 }
 /*主体部分*/
 .main {

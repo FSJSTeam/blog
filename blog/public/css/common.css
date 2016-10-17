@@ -66,6 +66,10 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     text-decoration: none;
     color: #999999;
 }
+
+.nav a:hover{
+    animation:myfirst 2s;
+}
 .nav a i{
     display:inline-block;
 }
@@ -125,7 +129,11 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     margin-left: 20px;
     position: absolute;
 }
-
+@keyframes myfirst
+{
+from {color:#999999;}
+to {color:#ffffff;}
+}
 /*主体部分*/
 .main {
     width: 1085px;
