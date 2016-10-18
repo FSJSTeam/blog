@@ -6,22 +6,22 @@
  */
 
 /**
- * 字体icon(未解决)
+ * 字体icon
  */
 
-@font-face {
-  font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1476627691_3675745.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1476627691_3675745.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1476627691_3675745.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1476627691_3675745.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1476627691_3675745.svg#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1476715956'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1476715956#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1476715956') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1476715956') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1476715956#iconfont') format('svg'); /* iOS 4.1- */
 }
-                    
+
 .iconfont {
   font-family:"iconfont" !important;
-  font-size:16px;
+  font-size:15px;
   font-style:normal;
+  padding-right: 5px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +30,7 @@
 /**
  * 布局
  */
+
 .left{
 	width: 720px;
 }
@@ -55,6 +56,7 @@ h1,h2,h3{
 /**
  * 博客标识样式
  */
+
 .tip{
 	position: relative;
 }
@@ -83,17 +85,14 @@ h1,h2,h3{
 	position: absolute;
 	right: 0;
 	top: 0;
-}
-.iconfont {
-    -webkit-text-stroke-width: 0.2px;
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
+	color: #ccc;
+    padding-left: 10px;
 }
 
 /**
  * 博客发帖人详情
  */
+
 .detail-about{
 	background-color: #f2f2f2;
 }
