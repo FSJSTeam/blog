@@ -19,6 +19,7 @@
 
 .iconfont {
   font-family:"iconfont" !important;
+  color: #ccc;
   font-size:15px;
   font-style:normal;
   padding-right: 5px;
@@ -32,10 +33,12 @@
  */
 
 .left{
-	width: 720px;
+	width: 710px;
+	float: left;
 }
 .right{
-	width: 357px;
+	width: 350px;
+	float: right;
 }
 
 /**
@@ -64,6 +67,7 @@ h1,h2,h3{
 	margin: 5px 0 15px;
 }
 .detail-hint span{
+	font-size: 12px;
 	display: inline-block;
 	height: 20px;
 	line-height: 20px;
@@ -83,9 +87,9 @@ h1,h2,h3{
 
 .list-hint{
 	position: absolute;
+	color: #000;
 	right: 0;
 	top: 0;
-	color: #ccc;
     padding-left: 10px;
 }
 
@@ -93,6 +97,88 @@ h1,h2,h3{
  * 博客发帖人详情
  */
 
-.detail-about{
-	background-color: #f2f2f2;
+
+.detail-about {
+    background-color: #f2f2f2;
+    color: #999;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 15px;
+    position: relative;
+}
+
+.ph-user img{
+	height: 46px;
+	width: 46px;
+	left: 0;
+	border-radius: 100%;
+	display: block;
+}
+
+
+.detail-about .ph-user cite {
+	position: absolute;
+    color: #4f99cf;
+    font-size: 14px;
+    left: 70px;
+    top: 20px;
+    width: 260px;
+}
+
+.detail-about .ph-user cite em{
+	color: #999;
+    cursor: default;
+	font-size: 12px;
+	font-style: normal;
+	padding-left: 5px;
+}
+
+.detail-hits{
+	position: absolute;
+	bottom: 15px;
+	left: 70px;
+}
+
+/**
+ * 博客详情主题文章部分
+ */
+
+.detail-context{
+	margin: 20px 0;
+	font-size: 16px;
+	min-height: 200px;
+	line-height: 26px;
+}
+
+.detail-context p{
+    text-indent: 2em;
+}
+
+/**
+ * 热帖排行
+ */
+
+.hot-page .p-title{
+    font-size: 14px;
+    background-color: #f2f2f2;
+    line-height: 38px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.hot-page .hot-list{
+	margin: 10px 0;
+}
+/**
+ * 列表有错
+ */
+.hot-list li{
+	color: #009e94;
+	display: block;
+	font-style: oblique;
+	line-height: 26px;
+	margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style-type: inside none decimal-leading-zero;
 }
