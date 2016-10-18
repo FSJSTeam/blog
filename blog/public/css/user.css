@@ -159,6 +159,10 @@ to {color:#ffffff;}
     min-height: 600px;
     margin: 0 auto 15px;
 }
+
+.layui-tab-title{
+    width: 425px;
+}
 /*标题部分*/
 .page-title {
     font-size: 14px;
