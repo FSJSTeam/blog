@@ -187,11 +187,7 @@ to {color:#ffffff;}
     display: inline-block;
     vertical-align: middle;
 }
-#qianming{
-    border-right: 1px solid #e6e6e6;
-    border-radius: 2px;
-    box-sizing: border-box!important;
-}
+
 
 /*标题部分*/
 .page-title {

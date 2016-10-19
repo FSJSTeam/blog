@@ -56,13 +56,13 @@
    			</div>
 
     		<div class="layui-tab-item">
-	<form class="layui-form" "layui-form-pane" action="">
+	<form class="layui-form layui-form-pane" action="">
 		<div class="layui-form layui-form-pane">
 				<div class="layui-form-item">
 					<div class="layui-inline">
 						<label for="pwd" class="layui-form-label">邮箱</label>
 						<div class="layui-input-block">
-							<input id="pwd" type="password" class="layui-input"></input>
+							<input id="pwd" type="text" class="layui-input"></input>
 						</div>
 					</div>
 					<div class="layui-inline">
@@ -77,14 +77,14 @@
 					<div class="layui-inline">
 						<label for="pwd" class="layui-form-label">昵称</label>
 						<div class="layui-input-block">
-							<input id="pwd" type="password" class="layui-input"></input>
+							<input id="pwd" type="text" class="layui-input"></input>
 						</div>
 					</div>
 				</div>
 		</div>
 
 		<div class="layui-form-item" id="xingbie">
-				<label class="layui-form-label">性别:</label>		
+						
     			<div class="layui-input-inline">
      			<input type="radio" name="sex" value="男" title="男">
      			<input type="radio" name="sex" value="女" title="女" checked>
@@ -97,25 +97,57 @@
 					<div class="layui-inline">
 						<label for="pwd" class="layui-form-label">城市</label>
 						<div class="layui-input-block">
+							<input id="pwd" type="text" class="layui-input"></input>
+						</div>
+					</div>
+				</div>
+		</div>
+
+
+<div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">签名</label>
+          <div class="layui-input-block">
+            <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+          </div>
+
+</div>
+	<button class="layui-btn">确认修改</button>
+	</form>
+    		</div>
+   			 <div class="layui-tab-item">
+   			 	<form class="layui-form layui-form-pane" action="">
+
+		<div class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label for="pwd" class="layui-form-label">新密码</label>
+						<div class="layui-input-block">
+							<input id="pwd" type="password" class="layui-input"></input>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<div class="layui-form-mid layui-word-aux">6到16个字符
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label for="pwd" class="layui-form-label">确认密码</label>
+						<div class="layui-input-block">
 							<input id="pwd" type="password" class="layui-input"></input>
 						</div>
 					</div>
 				</div>
 		</div>
-<div class="layui-form-item layui-form-text">
-          <label class="layui-form-label" id="qianming">文本域</label>
-          <div class="layui-input-block">
-            <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
-          </div>
-</div>
-	<button class="layui-btn">确认修改</button>
-	</form>
-
-    		</div>
-   			 <div class="layui-tab-item">内容5</div>
+   			 	</form>
+   			 	<button class="layui-btn">确认修改</button>
+   			 </div>
   		</div>	
   </div>
-</div>      
+</div>  
+
 
 
 
