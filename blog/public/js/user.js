@@ -7,3 +7,10 @@
   			  console.log(data);	
   });
 });
+
+
+/*富文本编辑器*/
+layui.use('layedit', function(){
+  var layedit = layui.layedit;
+  layedit.build('main-textarea'); //建立编辑器
+});

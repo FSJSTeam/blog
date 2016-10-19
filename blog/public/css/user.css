@@ -160,9 +160,39 @@ to {color:#ffffff;}
     margin: 0 auto 15px;
 }
 
+/* 我的发布 */
 .layui-tab-title{
     width: 425px;
 }
+#main-textarea{
+    display: none;
+}
+#text-but{
+    display: block;
+    margin-top: 15px;
+}
+ /* 个人资料   */
+
+.youxiangyanzheng{
+    text-decoration: none;
+    color: #4F99CF;
+    display: inline-block;
+}
+#nicheng{
+    display: inline-block;
+    float: left;
+}
+
+#xingbie{
+    display: inline-block;
+    vertical-align: middle;
+}
+#qianming{
+    border-right: 1px solid #e6e6e6;
+    border-radius: 2px;
+    box-sizing: border-box!important;
+}
+
 /*标题部分*/
 .page-title {
     font-size: 14px;

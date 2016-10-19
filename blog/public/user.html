@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
 	<link rel="stylesheet" type="text/css" href="../public/css/user.css">
 	<script src="layui/layui.js"> </script>
-	<script type="text/javascript" src="../public/js/tabjianting.js"></script>
+	<script type="text/javascript" src="../public/js/user.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -43,16 +43,80 @@
     		<li>个人资料</li>
    			<li>我的密码</li>
   		</ul>
- 	 <div class="layui-tab-content">
-  			<div class="layui-tab-item layui-show">内容1</div>
-   			 <div class="layui-tab-item">内容2</div>
-   			 <div class="layui-tab-item">内容3</div>
-    		<div class="layui-tab-item">内容4</div>
+ 	 	<div class="layui-tab-content">
+  			<div class="layui-tab-item layui-show">
+  				<p>暂无评论</p>
+  			</div>
+   			<div class="layui-tab-item">
+   				<p>暂无回复</p>
+   			</div>
+   			<div class="layui-tab-item">
+   				<textarea id="main-textarea"></textarea>
+   				<button class="layui-btn layui-btn-primary" id="text-but">提交发布</button>
+   			</div>
+
+    		<div class="layui-tab-item">
+	<form class="layui-form" "layui-form-pane" action="">
+		<div class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label for="pwd" class="layui-form-label">邮箱</label>
+						<div class="layui-input-block">
+							<input id="pwd" type="password" class="layui-input"></input>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<div class="layui-form-mid layui-word-aux">如果您在邮箱已激活的情况下，变更了邮箱，需<a href="#" class="youxiangyanzheng"> 重新验证邮箱。</a>
+						</div>
+					</div>
+					</div>
+				</div>
+
+		<div class="layui-form layui-form-pane" id="nicheng">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label for="pwd" class="layui-form-label">昵称</label>
+						<div class="layui-input-block">
+							<input id="pwd" type="password" class="layui-input"></input>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="layui-form-item" id="xingbie">
+				<label class="layui-form-label">性别:</label>		
+    			<div class="layui-input-inline">
+     			<input type="radio" name="sex" value="男" title="男">
+     			<input type="radio" name="sex" value="女" title="女" checked>
+    			</div>
+   		</div>
+
+
+		<div class="layui-form layui-form-pane">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label for="pwd" class="layui-form-label">城市</label>
+						<div class="layui-input-block">
+							<input id="pwd" type="password" class="layui-input"></input>
+						</div>
+					</div>
+				</div>
+		</div>
+<div class="layui-form-item layui-form-text">
+          <label class="layui-form-label" id="qianming">文本域</label>
+          <div class="layui-input-block">
+            <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+          </div>
+</div>
+	<button class="layui-btn">确认修改</button>
+	</form>
+
+    		</div>
    			 <div class="layui-tab-item">内容5</div>
-  </div>	
+  		</div>	
   </div>
 </div>      
-</div>
+
 
 
 
