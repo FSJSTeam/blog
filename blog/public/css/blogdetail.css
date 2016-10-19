@@ -10,11 +10,11 @@
  */
 
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1476715956'); /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1476715956#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/iconfont.woff?t=1476715956') format('woff'), /* chrome, firefox */
-  url('../fonts/iconfont.ttf?t=1476715956') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont.svg?t=1476715956#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -35,10 +35,12 @@
 .left{
 	width: 710px;
 	float: left;
+	margin-bottom: 40px;
 }
 .right{
 	width: 350px;
-	float: right;
+	float: left;
+	margin-left: 25px;
 }
 
 /**
@@ -158,7 +160,7 @@ h1,h2,h3{
  * 热帖排行
  */
 
-.hot-page .p-title{
+.p-title{
     font-size: 14px;
     background-color: #f2f2f2;
     line-height: 38px;
@@ -174,11 +176,62 @@ h1,h2,h3{
  */
 .hot-list li{
 	color: #009e94;
-	display: block;
 	font-style: oblique;
 	line-height: 26px;
 	margin-top: 10px;
     white-space: nowrap;
     overflow: hidden;
-    list-style-type: inside none decimal-leading-zero;
+    list-style: inside none decimal-leading-zero;
 }
+
+.hot-list a{
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.hot-list span{
+	color: #CCD0DA;
+}
+
+/**
+ * 评论样式表
+ */
+
+.comment{
+	margin-top: 40px;
+}
+
+.comment .detail-about{
+	background-color: #fff;
+}
+
+.comment-body{
+	font-size: 14px;
+	line-height: 24px;
+	margin: 15px 0 20px;
+}
+
+.reply{
+	cursor: pointer;
+	padding-right: 20px;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.comment-reply .reply i{
+	color: #999;
+	font-size: 24px;
+}
+
+.comment li{
+	border-bottom: 1px dotted #dfdfdf;
+    padding: 20px 0 10px;
+}
+
+.answer{
+	width: 710px;
+}
+
+/**
+ * 分页
+ */
