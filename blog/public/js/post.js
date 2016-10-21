@@ -3,6 +3,7 @@
  * create by 阿杰 2016-10-15
  * 修改记录：
  */
+
 var page = {
 	/**
 	 * 表单验证
@@ -45,33 +46,37 @@ var page = {
 					title : $('#title').val(),
 					content : layedit.getContent(index),
 					text : layedit.getText(index),
-					typeid : $('#type').val(),
-					tag : $('#tag').val()
+					tid : $('#type').val(),
+					tags : $('#tag').val(),
+					uuid : '1'
 				};
 				console.log(sendData);
 				//ajax请求后台
+				var url = common.HOSTURL+'/blogController.php?action=add';
+				common.ajax(url, sendData, function(data){
+					var data = JSON.parse(data);
+					if(data && data.code == '1'){
+						layer.msg('发布成功',{icon:1});
+						setTimeout("location.reload()",2000);
+					}
+				});
 				
 			}else{
 				//表单验证未通过
 			}
 		});
 	}
-
 };
 
-layui.all(function(){
-  var layer = layui.layer,
-  layedit = layui.layedit;
-  
-  	//建立编辑器
-  	var index = layedit.build('content',{
-		  	height : 300,
-		  	uploadImage: {
-		    url: '', //接口url
-		    type: 'post' //默认post
-	  	}
-  	});
+$(document).ready(function(){
+   	layui.use(['layer','form','layedit'],function(){
+	 	var layer = layui.layer,
+	  	layedit = layui.layedit;
+	  	var edit = layedit.build('content', {
+		  height: 180 //设置编辑器高度
+		}); 	
+		page.post(layedit, edit);
+	});
 
-  	//发布博客
-  	page.post(layedit, index);
-});
+})
+
