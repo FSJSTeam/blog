@@ -38,14 +38,72 @@
 	<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
   		<ul class="layui-tab-title layui-tab-title-tebie">
    			<li class="layui-this">我的评论</li>
-   			<li>我的回复</li>
+   			<li>我的消息</li>
     		<li>我的发布</li>
     		<li>个人资料</li>
    			<li>我的密码</li>
   		</ul>
  	 	<div class="layui-tab-content">
   			<div class="layui-tab-item layui-show">
-  				<p>暂无评论</p>
+ 
+ 	       <ul class="comment">
+            <li>
+                <div class="detail-about detail-about-reply">
+                    <a class="ph-user" href="#">
+                        <img src="images/g3.png" alt="清峰">
+                        <cite>
+                            <i>清峰</i>
+                        </cite>
+                    </a>
+                <div class="detail-hits">
+                    <span>1天前</span>
+                </div>
+                </div>
+                <div class="comment-body">
+                    我和我的猫都很想你，可是没有你，也没有猫。
+                </div>
+                <div class="comment-reply">
+                    <span class="reply">
+                        <i class="iconfont">&#xe601;</i>
+                        <em>132</em>
+                    </span>
+                    <span class="reply">
+                        <i class="iconfont">&#xe600;</i>
+                        回复
+                    </span>
+                </div>
+            </li>
+                        <li>
+                <div class="detail-about detail-about-reply">
+                    <a class="ph-user" href="#">
+                        <img src="images/g3.png" alt="清峰">
+                        <cite>
+                            <i>清峰</i>
+                        </cite>
+                    </a>
+                <div class="detail-hits">
+                    <span>1天前</span>
+                </div>
+                </div>
+                <div class="comment-body">
+                    我和我的猫都很想你，可是没有你，也没有猫。
+                </div>
+                <div class="comment-reply">
+                    <span class="reply">
+                        <i class="iconfont">&#xe601;</i>
+                        <em>666</em>
+                    </span>
+                    <span class="reply">
+                        <i class="iconfont">&#xe600;</i>
+                        回复
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+				<textarea id="main-textarea"></textarea>
+                <button id="tjpl" class="layui-btn">提交评论</button>
+         	
   			</div>
    			<div class="layui-tab-item">
    				<p>暂无回复</p>

@@ -142,22 +142,86 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
 from {color:#999999;}
 to {color:#ffffff;}
 }
-/*主体部分*/
-.main {
-    width: 1085px;
-    min-height: 600px;
-    margin: 0 auto 15px;
-}
+
 /*tab的底边框*/
 .layui-tab-title-tebie{
     width: 424px;
 }
+/*我的评论*/
+.ph-user img{
+    height: 46px;
+    width: 46px;
+    left: 0;
+    border-radius: 100%;
+    display: block;
+}
+.detail-hits{
+    position: absolute;
+    bottom: 15px;
+    left: 70px;
+}
+.detail-about .ph-user cite {
+    position: absolute;
+    color: #4f99cf;
+    font-size: 14px;
+    left: 70px;
+    top: 20px;
+    width: 260px;
+}
+.detail-about {
+    background-color: #f2f2f2;
+    color: #999;
+    line-height: 20px;
+    padding:15px;
+    position: relative;
+}
+
+.comment .detail-about{
+    background-color: #fff;
+}
+
+.comment-body{
+    font-size: 14px;
+
+    margin: 4px 0 5px;
+}
+
+.reply{
+    cursor: pointer;
+    padding-right: 20px;
+
+    font-size: 16px;
+}
+
+.comment-reply .reply i{
+    color: #999;
+    font-size: 20px;
+}
+
+.comment li{
+    border-bottom: 1px dotted #dfdfdf;
+    padding: 6px 0px;
+}
+
+.answer{
+    width: 710px;
+}
+#main-textarea{
+    display: none;
+}
+
+#tjpl{
+    margin-top: 20px;
+
+}
+
 /* 我的发布 */
 .fly-list-li{
 width: 728px;
 height:58px;
 border-bottom: 1px solid #DFDFDF;
 position: relative;
+margin-top: 5px;
 }
 .fly-list-li img{
 padding-top: 5px;
