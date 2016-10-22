@@ -132,6 +132,7 @@ var page = {
 	}
 };
 $(document).ready(function() {
+	common.init(0);
 	layui.use(['layer'],function() {
 	 	var layer = layui.layer;
 
