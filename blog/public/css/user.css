@@ -78,14 +78,6 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     font-size: 13px;
 }
 /*账户设置退了*/
-.nav-user{
-    height: 37px;
-    width: 350px;
-    position:absolute;
-    top: 13px;
-    left: 940px;
-
-}
 .icon-yhtouxiang{
     background:url(../images/icon-yonghutx.svg);
     background-size: 35px 35px;
@@ -93,42 +85,17 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     height: 35px;
     width: 35px;
     vertical-align:middle;  
-
-
-}
-.nav-user-shezhi-incon{
-    display: block;
-    height: 35px;
-    width: 35px;    
 }
 .nav-user-shezhi a:hover{
     animation:myfirst 2s;
 }
-
-
-.incon-shezhi{
-    background:url(../images/icon-shezhi.svg);
-    background-size: 35px 35px;
-    vertical-align:middle;
-    }
-.incon-guanbi{
-    background:url(../images/icon-guanbi.svg);
-    background-size: 35px 35px;
-    vertical-align:middle;
-      
-}
-
 .nav-user-shezhi{
     position: absolute;
     width: 185px;
     height: 37px;
     left: 150px; 
     top:0px; 
-    
-   
-
 }
-
 .nav-user-shezhi a {
     width: 90px;
     height: 37px;

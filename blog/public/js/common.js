@@ -57,7 +57,7 @@ var common  = {
      * @param String name
      * @return
      */
-    del: function (name) {
+    delCookie: function (name) {
     	
     	common.setCookie(name, "", -1);  
     },
@@ -338,6 +338,109 @@ var common  = {
             }  
         }  
         return s;  
+    },
+    /**
+     * 判断用户是否以及登录
+     * 如果未登录  返回 '未登录'
+     * 如果登录  返回登录信息
+     */
+    isLogin : function(){
+    	 var uuid = common.getCookie('uuid');
+    	 var name = common.getCookie('name');
+    	 var mobile = common.getCookie('mobile');
+    	 if(uuid === undefined || name === undefined || mobile === undefined){
+    	 	return '未登录';
+    	 }else{
+    	 	return {
+    	 		uuid : uuid,
+    	 		name : name,
+    	 		mobile : mobile
+    	 	}
+    	 }
+    },
+    header : function(type) {
+    	var html = '';
+    	html += '<a href="./index.html" class="logo"></a>';
+		html += '<div class="nav">';
+		html += '<a href="#"><i class="icon icon-wenhao"></i><span>问答</span></a>';
+		html += '<a href="#"><i class="icon icon-ui"></i><span>框架</span></a>';
+		html += '</div>';
+		html += '<div class="nav-user">';
+		var user = common.isLogin();
+		if(user == '未登录'){
+			html += '<a href="./login.html" class="icon-touxiang"></a>';
+			html += '<span><a href="./login.html">登入</a><a href="./register.html">注册</a></span>';
+			html += '<p>';
+			html += '<a href="#" class="navuser-icon icon-qq"></a>';
+			html += '<a href="#" class="navuser-icon icon-wb"></a>';
+			html += '</p>';
+		}else{
+			html += '<div class="nav-user-shezhi">';
+			html += '<a title="'+user.name+'" href="./user.html">';
+			html += '<i class="nav-user-shezhi-incon icon-yhtouxiang"></i><span>'+user.name+'</span>';
+			html += '</a>';
+			html += '<a href="javascript:;" id="userLogout">';
+			html += '<i class="nav-user-shezhi-incon incon-guanbi"></i><span>退了</span>';
+			html += '</a>';
+			html += '</div>';
+		}
+		html += '</div>';
+
+		$('.header').html(html);
+		common.logout(type);
+    },
+    /**
+     * 初始化页面footer
+     * @return {[type]} [description]
+     */
+    footer : function() {
+    	var html = '<p>';
+		html += '<a href=""> 全栈俱乐部 </a>';
+		html += ' 2016 © 版权所有';
+		html += '</p>';
+		html += '<p>';
+		html += '<a href=""> 商务合作 </a>';
+		html += '<a href=""> 微信公众号 </a>';
+		html += '<a href=""> 微博 </a>';
+		html += '</p>';
+		html += '<p>';
+		html += ' ---by ';
+		html += '<a href="http://mmblog.duapp.com/blog/"> 晓杰 </a>';
+		html += '<a href=""> 楷子 </a>';
+		html += '<a href=""> 小刀 </a>';
+		html += '<a href=""> 小一 </a>';
+		html += '<a href=""> 小丰 </a>';
+		html += '</p>';
+		$('.footer').html(html);
+    },
+    logout : function(type) {
+    	$('#userLogout').on('click', function() {
+    		common.delCookie('uuid');
+    		common.delCookie('name');
+    		common.delCookie('mobile');
+    		if(type == 1){
+    			//用户点击退出，当前页面没有查看权限，跳转到登录页面
+    			location.href = 'login.html';
+    		}else{
+    			//用户点击退出,当前页面可以查看，重新加载该页
+    			location.reload();
+    		}
+    	});
+    },
+    /**
+     * 页面初始化，加载头部尾部
+     * @param type = 1 未登录用户不能查看该页面，type = other,未登录用户可以查看
+     */
+    init : function(type) {
+    	var user = common.isLogin();
+		if(user == '未登录' && type == '1'){
+			//用户未登录且没有权限查看该页面
+			location.href = './login.html';
+		}else{
+
+		}
+    	common.footer();
+    	common.header(type);
     }
 };
 
@@ -399,5 +502,5 @@ var pageHelper = {
                 "message" : "传入参数有误"
             }
         }
-    }
+    },
 };

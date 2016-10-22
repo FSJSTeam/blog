@@ -19,6 +19,10 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     height: 65px;
     background-color: #393D49;
 }
+.avatar {
+    color: #A9B7B7;
+    font-size: 14px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -128,6 +132,74 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     width: 35px;
     margin-left: 20px;
     position: absolute;
+}
+.nav-user{
+    height: 37px;
+    width: 350px;
+    position:absolute;
+    top: 13px;
+    left: 940px;
+
+}
+.icon-yhtouxiang{
+    background:url(../images/icon-yonghutx.svg);
+    background-size: 35px 35px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    vertical-align:middle;  
+
+
+}
+.nav-user-shezhi-incon{
+    display: block;
+    height: 35px;
+    width: 35px;    
+}
+.nav-user-shezhi a:hover{
+    animation:myfirst 2s;
+}
+
+
+.incon-shezhi{
+    background:url(../images/icon-shezhi.svg);
+    background-size: 35px 35px;
+    vertical-align:middle;
+    }
+.incon-guanbi{
+    background:url(../images/icon-guanbi.svg);
+    background-size: 35px 35px;
+    vertical-align:middle;
+      
+}
+
+.nav-user-shezhi{
+    position: absolute;
+    height: 37px;
+    left: 150px; 
+    top:0px; 
+}
+
+.nav-user-shezhi a {
+    height: 37px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #999999;
+}
+.nav-user-shezhi a:nth-child(1) {
+    margin-right: 10px;
+    max-width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.nav-user-shezhi a i{
+    display:inline-block;
+}  
+.nav-user-shezhi a span{
+    margin-left: 10px;
+    font-size: 13px;
 }
 /*导航字体变色*/
 @keyframes myfirst

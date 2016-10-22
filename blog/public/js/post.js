@@ -69,6 +69,7 @@ var page = {
 };
 
 $(document).ready(function(){
+	common.init(1);
    	layui.use(['layer','form','layedit'],function(){
 	 	var layer = layui.layer,
 	  	layedit = layui.layedit;
