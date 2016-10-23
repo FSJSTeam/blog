@@ -41,63 +41,7 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     height: 65px;
     background-color: #393D49;
 }
-*{
-    padding: 0;
-    margin: 0;
-}
-/*fly样式*/
-.logo{
-    background: url(../images/logos.png);
-    margin-left: 80px;
-    top: 13px;
-    display: block;
-    width: 220px;
-    height: 37px;
-    position: absolute;
-}
 
-/*问答和框架样式*/
-.icon{
-    display: block;
-    height: 35px;
-    width: 35px;
-    
-}
-.icon-wenhao{
-    background:url(../images/icon-wenhao.svg);
-    background-size: 35px 35px;
-    vertical-align:middle;
-}
-.icon-ui{
-    background:url(../images/icon-ui.svg);
-    background-size: 35px 35px;
-    vertical-align:middle;
-}
-.nav{
-    position: absolute;
-    width: 220px;
-    height: 37px;
-    left:375px;
-    top: 13px;
-}
-.nav a {
-    width: 110px;
-    height: 37px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    color: #999999;
-}
-
-.nav a:hover{
-    animation:myfirst 2s;
-}
-.nav a i{
-    display:inline-block;
-}
-.nav a span{
-    margin-left: 10px;
-    font-size: 13px;
 }
 /*账户设置退了*/
 .icon-yhtouxiang{
@@ -108,17 +52,17 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
     width: 35px;
     vertical-align:middle;  
 }
-.nav-user-shezhi a:hover{
+.nav-make a:hover{
     animation:myfirst 2s;
 }
-.nav-user-shezhi{
+.nav-make{
     position: absolute;
     width: 185px;
     height: 37px;
     left: 150px; 
     top:0px; 
 }
-.nav-user-shezhi a {
+.nav-make a {
     width: 90px;
     height: 37px;
     display: block;
@@ -128,13 +72,14 @@ body{line-height:24px;   -webkit-font-feature-settings: 'kern' 1; -moz-font-feat
 
 }
 
-.nav-user-shezhi a i{
+.nav-make a i{
     display:inline-block;
 }
     
-.nav-user-shezhi a span{
+.nav-make a span{
     margin-left: 10px;
     font-size: 13px;
+    display:inline-block;
 }
 /*css3的字体变化*/
 @keyframes myfirst
@@ -214,6 +159,65 @@ to {color:#ffffff;}
     margin-top: 20px;
 
 }
+/*我的消息*/
+
+.message-li{
+width: 728px;
+height:58px;
+border-bottom: 1px solid #DFDFDF;
+position: relative;
+margin-top: 5px;
+}
+.message-li img{
+padding-top: 5px;
+}
+.message-ul{
+margin-top: 10px;
+}
+.message-li a{
+    font-size: 16px;
+
+}
+.fbtx{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    display: inline-block;
+
+}
+.message-top{
+    display: inline-block;
+    width: 668px;
+    height: 26px;
+    vertical-align:top;
+    margin-left:7px;
+    padding-top: 5px;
+}
+
+
+.message-bottom{
+    position: absolute;
+    display: block;
+    top:30px;
+    left:45px; 
+}
+.message-bottom span{
+    color: #999999;
+    padding-left: 30px;
+}
+.message-bottom a{
+    padding-left: 10px;
+}
+
+
+.message-wb{
+    position: absolute;
+    color: #000;
+    right: 0;
+    top:30px;
+    padding-left: 10px;
+}
+
 
 /* 我的发布 */
 .fly-list-li{

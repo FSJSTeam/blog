@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="../public/js/user.js"></script>
 </head>
 <body>
+<!-- 导航 -->
 	<div class="header">
 		<a href="#" class="logo"></a>
 		<div class="nav">
@@ -20,7 +21,7 @@
 		<div class="nav-user">
 			<a href="#" class="icon-yhtouxiang"></a>
 			<span><a href="#">纯金牙套</a></span>
-			<div class="nav-user-shezhi">
+			<div class="nav-make">
 				<a href="#">
 					<i class="nav-user-shezhi-incon incon-shezhi"></i><span>设置</span>
 				</a>
@@ -44,6 +45,7 @@
    			<li>我的密码</li>
   		</ul>
  	 	<div class="layui-tab-content">
+ 	 	<!-- 我的评论 -->
   			<div class="layui-tab-item layui-show">
  
  	       <ul class="comment">
@@ -105,9 +107,29 @@
                 <button id="tjpl" class="layui-btn">提交评论</button>
          	
   			</div>
+  			<!-- 我的消息 -->
    			<div class="layui-tab-item">
-   				<p>暂无回复</p>
+   				
+   					<ul class="message-ul">
+					<li class="message-li">
+						<img src="images/photo.jpg" alt="头像" class="fbtx"/>
+						<h2 class="message-top">
+							<p>清峰回复</p>
+            			</h2>
+						<p class="message-bottom">
+							<a href="#">"上传接口存在跨域存在问题"</a><span class="fly-bottom-span">1天前</span>
+							<div class="message-wb">
+               					<i class="iconfont" title="回答">&#xe602;</i>76
+                				<i class="iconfont" title="人气">&#xe603;</i>4573
+            				</div> 
+						</p>
+            		</li>
+            		</ul>
+   				
+
+
    			</div>
+   			<!-- 我的发布 -->
    			<div class="layui-tab-item">
 				<ul class="fly-list">
 					<li class="fly-list-li">
@@ -179,7 +201,7 @@
             		</li>            		           		           		
 				</ul>
    			</div>
-
+		<!-- 个人资料 -->
     		<div class="layui-tab-item">
 	<form class="layui-form layui-form-pane" action="">
 		<div class="layui-form layui-form-pane">
@@ -239,6 +261,7 @@
 	<button class="layui-btn">确认修改</button>
 	</form>
     		</div>
+    		<!-- 我的密码 -->
    			 <div class="layui-tab-item">
    			 	<form class="layui-form layui-form-pane" action="">
 
