@@ -8,6 +8,7 @@
  * 富编辑器
  */
 $(function() {
+	common.init();
 	layui.use('layedit', function() {
 		var layedit = layui.layedit;
 		layedit.build('content', {

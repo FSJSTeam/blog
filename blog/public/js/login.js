@@ -44,7 +44,7 @@ var page = {
 						common.setCookie('uuid',json.info.uuid,30);
 						common.setCookie('mobile',json.info.mobile,30);
 						common.setCookie('name',json.info.nickname,30);
-						location.href = './blogdetail.html';
+						location.href = './index.html';
 
 					}else{
 						//登录失败

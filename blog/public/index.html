@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="layui/css/layui.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
 </head>
 <body>
+<div class="header"></div>
     <div class="wrap-center">
         <div class="center-left">
             <div class="title-search">
@@ -23,7 +25,7 @@
                         <i class="layui-icon">&#xe615;</i>
                     </form>
                 </div>
-                <button class="layui-btn">发布问题</button>
+                <button id="post" class="layui-btn">发布文章</button>
             </div>
             <ul>
                 <li>
@@ -347,5 +349,10 @@
         <span class="layui-icon">&#xe606;</span>
         <span class="layui-icon">&#xe604;</span>
     </div>
+    <div class="footer"></div>
+<script type="text/javascript" src="./js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="./layui/layui.js"></script>  
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
